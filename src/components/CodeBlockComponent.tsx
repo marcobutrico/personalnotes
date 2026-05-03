@@ -29,7 +29,7 @@ export const CodeBlockComponent = ({ node, updateAttributes, extension }: any) =
       </button>
       
       <pre className="!mt-0 !mb-0">
-        <NodeViewContent as="code" className={`language-${node.attrs.language || 'javascript'}`} />
+        <NodeViewContent as={"code" as any} className={`language-${node.attrs.language || 'javascript'}`} />
       </pre>
     </NodeViewWrapper>
   );
